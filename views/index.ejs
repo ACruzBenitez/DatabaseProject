@@ -1,0 +1,174 @@
+
+         <!--Reference to the header-->
+  <% include partials/header.ejs %>
+   <center><h1><%= title %></h1></center>
+
+<!--Here all of the contect from almost every page is laid, is clear the usage of the col-md-12 from bootstrap
+   it helps a lot of the text to look nice and to have a nice placement-->
+<% if (title == "Home") { %>
+<center><h1>Welcome to my Practice 1 in Node.js!</h1>
+<p>
+   <h3>Hi! I'm an international student from Mexico with the dream of becoming a game developer.</h3>
+</p>
+<br><br>
+<div  class="col-md-2">
+</div>
+<div style="background-color: rgb(236, 210, 161); border-radius: 10px;"  class="col-md-8">
+<h2 class="gr2">Mission Statement</h2>
+<br>
+<p>
+   <div class="col-md-2"></div>
+   <div class="col-md-8" style="bottom: 20px;"><h4 class="gr1">
+   As a soon-to-be indie game developer I aspire to learn as much as possible, Game Center might have been 
+   just a simple idea that came to my mind on a rush, but to me now it means a lot! Creating videogames for
+   an specific demographic and seeing how much I can inspire that same demographic is such an inspiration for me
+   and this site.
+ </h4>
+ </div>
+ <div class="col-md-2"></div>
+</p>
+</div>
+<div  class="col-md-2">
+</div>
+</center>
+
+<% } %>
+
+
+<% if (title == "About") { %>
+   <center>
+      <div  class="col-md-2">
+      </div>
+      <div style="background-color: rgb(218, 184, 122); border-radius: 10px;"  class="col-md-8">
+      <h2 class="gr2">About me!</h2>
+      <br>
+      <p>
+         <div class="col-md-2"></div>
+         <div class="col-md-8" style="bottom: 20px;"><h4 class="gr1">
+            
+            <center><img src="/images/foto.jpeg" alt="mypic" style="width: 300px; border-radius: 10px;"></center>
+<br>
+         Hello! My name is Angel Fortino Cruz Benitez but you can call me Angel or Fortino, it is really
+         up to you :3.
+         <p>
+            I'm currently studying at Centennial College, Canada, but my home institution is UTVAM in Mexico. 
+            I'm 21 years old, i love art, videogames and programming. Nice to meet you all!
+         </p>
+         <br>
+        <a href="/pdf/Curriculum.pdf" download><h5 style="color: gray;">Click here to download the PDF version of my curriculum</h5></a>
+       </h4>
+       </div>
+       <div class="col-md-2"></div>
+      </p>
+      </div>
+      <div  class="col-md-2">
+      </div>
+      </center>
+   <% } %>
+
+   <% if (title == "Projects") { %>
+      <center>
+         <div  class="col-md-2">
+         </div>
+         <div style="background-color: rgb(212, 173, 99); border-radius: 10px;"  class="col-md-8">
+         <h2 class="gr2">Some of my favorite and most insignificant projects...</h2>
+         <br>
+         <p>
+            <div class="col-md-2"></div>
+            <div class="col-md-8" style="bottom: 20px;">
+               <h4 class="gr1">
+               
+               <center><img src="/images/lab.png" alt="mypic" style="width: 500px; border-radius: 10px;"></center>
+   <br>
+            
+            <p>
+               This was one of my first projects back in my home institution. The english coordinator reached
+               out to me for help with a system that could control student's attendance to the english lab. I worked as
+               a programmer for her and what once started as a simple project ended up being implemented in the school
+               system however maintenance is still required.
+            </p>
+            
+           <h5 style="color: gray;">Starting date 2018</h5>
+          </h4>
+          <br>
+          
+          <h4 class="gr1">
+          <center><img src="/images/MissDoja.png" alt="mypic" style="width: 300px; border-radius: 10px;"></center>
+   <br>
+            
+            <p>
+               Drawing besides being a passion of mine is also treated like a work for me now, the current pandemic
+               held us all in a pretty tricky situation and doing art commissions as well as imporving my work became 
+               one of if not my biggest project last year.
+            </p>
+            
+           <h5 style="color: gray;">Starting date 2020</h5>
+          </h4>
+          <br>
+         
+          <h4 class="gr1">
+          <center><img src="/images/Bunny.png" alt="mypic" style="width: 400px; border-radius: 10px;"></center>
+   <br>
+            
+            <p>
+               As an exchange student at centennial I never really knew what kind of projects I would have to make here, 
+               Luna is now my most challenging project at the moment, having to work in teams has never been of my liking
+               but somehow I believe that luna will succeed :). My role currently is of the designer and programmer and the
+               outcome is yet to be discovered.
+            </p>
+            
+           <h5 style="color: gray;">Starting date 2021</h5>
+          </h4>
+
+          </div>
+          <div class="col-md-2"></div>
+         </p>
+         </div>
+         <div  class="col-md-2">
+         </div>
+         
+         </center>
+      <% } %>
+
+      <% if (title == "Services") { %>
+         <center>
+            <div  class="col-md-2">
+            </div>
+            <div style="background-color: rgb(228, 181, 95); border-radius: 10px;"  class="col-md-8">
+            <h2 class="gr2">My services</h2>
+            <br>
+            <p>
+               <div class="col-md-2"></div>
+               <div class="col-md-8" style="bottom: 20px;"><h4 class="gr1">
+                  
+      <br>
+               Coding in C#, Java, HTML, both game programming and designing, experience with adobe, office and drawing both digital and
+               traditional styles are some of my main abilities!
+               <p>
+                  <center><img src="/images/new/service1.jpg" alt="mypic" style="width: 500px; border-radius: 10px;"></center>
+               </p>
+               <p>
+                  <center><img src="/images/new/service2.jpg" alt="mypic" style="width: 500px; border-radius: 10px;"></center>
+               </p>
+               <p>
+                  <center><img src="/images/new/service3.jpg" alt="mypic" style="width: 500px; border-radius: 10px;"></center>
+               </p>
+               <p>
+                  <br>
+                  I have some experience workin in teams as well so I have knowledge about team work and some methodologies like
+                  SCRUM or waterfall.
+               </p>
+               <br>
+              <a href="/users/contact"><h5 style="color: gray;">Click here for my contact information.</h5></a>
+             </h4>
+             </div>
+             <div class="col-md-2"></div>
+            </p>
+            </div>
+            <div  class="col-md-2">
+            </div>
+            </center>
+         <% } %>
+
+         <!--Reference to the footer-->
+   <% include partials/footer.ejs %>

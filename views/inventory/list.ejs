@@ -1,0 +1,45 @@
+<%- include ../partials/header.ejs %>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="row">
+        <h1><%= title %></h1>
+        <br>
+        <div>
+            <a href="/inventory/add" class="btn btn-primary align-self-end" role="button">
+                <i class="fas fa-plus-circle"></i> 
+                Add a new Contact
+            </a>                
+        </div>
+
+        <div class="table-responsive">
+            <table class="table">
+                <!-- Header Row-->
+                <tr>
+                    <th class="text-center color:black">Name</th>
+                    <th class="text-center color:black">Number</th>
+                    <th class="text-center color:black">email</th>
+                </tr>
+
+                <!-- Repeatable Template Row -->
+
+                <% for(let count = 0; count < InventoryList.length; count++) { %>
+                    <tr>
+                        <td class="text-center"><%= InventoryList[count].name %></td>
+                        <td class="text-center"><%= InventoryList[count].number %></td>
+                        <td class="text-center"><%= InventoryList[count].email %></td>
+                        <td class="text-center">
+                            <a href="/inventory/edit/<%= InventoryList[count]._id %>" class="btn btn-primary btn-sm">
+                            <i class="fas fa-pencil-alt">edit</i></a>
+                        </td>
+                        <td class="text-center">
+                            <a href="/inventory/delete/<%= InventoryList[count]._id %>" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash-alt">delete</i></a>
+                        </td>
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+  </main>
+<%- include ../partials/footer.ejs %>

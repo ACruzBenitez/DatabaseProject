@@ -1,0 +1,67 @@
+         <!--Reference to the header-->
+<% include partials/header.ejs %>
+   <center><h1><%= title %></h1></center>
+   <% if (title == "Contact info") { %>
+         <!--Same as in the index format all of this info is written using col-md-2 by bootstrap to help 
+         with the organization of the page-->
+      <br><br>
+      <div  class="col-md-2"></div>
+      <div style="background-color: rgb(226, 166, 55); border-radius: 10px;"  class="col-md-8">
+      <center><h1 class="gr2">Send me a message!</h1></center>
+      <br>
+      <p>
+         <div class="col-md-2"></div>
+         <div class="col-md-8" style="bottom: 20px; background-color: rgb(230, 218, 165); border-radius: 10px;">
+         <div class="col-md-6" style="left: 30px;">
+         <h3 class="gr3">
+         <p>First name: 
+         <br><br>Last name:
+         <br><br>Contact number:
+         <br><br>Email Address:
+         <br><br>Message:
+         </p><br>
+         </h3>
+         </div>
+         <div class="col-md-6">
+            <br><p><input type="text" id="fname" class="in">
+            <br><br><input type="text" id="lname" class="in">
+            <br><br><input type="tel" id="number" class="in"> 
+            <br><br><input type="email" id="email"  class="in">
+            <br><br><textarea type="text" id="mess" class="in"></textarea>
+            </p>
+         </div>
+         <center>
+         <br>
+         <button class="bt" type="button"><a href="/" style="color: rgb(24, 23, 19);">submit info</a></button>
+         <br><br>
+         </center>
+       </div>
+       <div class="col-md-2"></div>
+      <div class="col-md-12">
+      <center>
+      <h2>Some other places you can find me:</h2>
+      <p>
+         <!-- Functions of mailto and href to redirect the user to my social media and my email-->
+      <div class="col-md-6">
+         <a href="https://twitter.com/homoshomies"><h4>Twitter</h4></a>
+         <a href="https://www.facebook.com/angel.cb.12"><h4>Facebook</h4></a>
+      </div>
+      <div class="col-md-6">
+         <a href="mailto:acruzben@mycentennialcollege.ca"><h4>Gmail</h4></a>
+         <a href="https://www.instagram.com/artngelc/?hl=es"><h4>Instagram</h4></a>
+      </div> 
+      <br><br><br>
+         
+         </center>
+   </p><br>
+      <br>
+      </div>
+      </div>
+      <div  class="col-md-2">
+      </div>
+      
+      <p><br>
+         <br></p>
+      <% } %>
+         <!--Reference to the footer-->
+      <% include partials/footer.ejs %>

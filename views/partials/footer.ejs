@@ -1,0 +1,29 @@
+<!--Because the contact page already has contact info it would be unnecessary to have the footer with basically 
+the same links so, if the user is everywhere but the contact page ill show both my facebook link and my email-->
+<% if (title != "Contact info" || title != "Login") { %>
+    <div class="col-md-12" style="top: 40px; border-radius:10px; background-color: rgb(13, 6, 27); border-top:20px;">
+        <center>
+            <br><h4><p>Contact information:</p>
+        <br>
+        Facebook: <a href="https://www.facebook.com/angel.cb.12">AngelCB</a><p></p>
+        email: <a href="mailto: acruzben@my.centennialcollege.ca">acruzben@my.centennialcollege.ca</a> 
+        </center>
+    </h4>
+    <br><br>
+    </div>
+    
+<% } %>
+<% if (title == "Contact info") { %>
+    <div class="col-md-12" style="top: 40px; border-radius:10px; background-color: rgb(13, 6, 27);">
+        <h4>
+        <br>
+        <center>
+        Thank you for visiting my page!
+        </center>
+    </h4>
+    <br><br>
+    </div>
+    
+<% } %>
+</body>
+</html>

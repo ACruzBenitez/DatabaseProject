@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+  <head>
+<!-- Links to the bootstrap libraries and the stylesheets for those libraries in css -->
+      <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+      <script src="/bootstrap/dist/js/jquery.js"></script>
+      <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+      
+
+      <link rel="icon" href="images/Logo2.png">
+      
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title><%= title %></title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Style classes used in the project with their attributes-->
+    <style>  
+.in{margin-bottom: 3px; color: rgb(25, 26, 34); font-family: Dosis; border-style:none; border-radius: 8px;}
+.bt{color: rgb(20, 22, 37); font-family: Dosis; border-style:none; border-radius: 8px; size: 50px;}
+.gr1{color:rgb(71, 67, 77); font-size: 25px;}
+.gr2{color:rgb(29, 22, 29); font-size: 35px;}
+.gr3{color:rgb(104, 96, 117); font-size: 20px;}
+.fn{color:white; background-color:#101D21; background-repeat: no-repeat; background-position: center center; }
+
+H1 { font-family: Dosis;}
+H2 { font-family: Dosis;}
+H3 { font-family: Dosis; font-size: 20px;}
+H5 { font-family: Dosis;}
+H4 { font-family: Dosis;}
+
+    </style>
+  </head>
+  <body background= "images/cielo.png" class="fn">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!--Using the nav we can start programming our navigation bar in the prohject-->
+            <nav class="navbar navbar navbar-static-top" role="navigation">
+                <div style="float: left;" class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse"
+                          data-target=".navbar-ex1-collapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                    
+                </div>
+                <div  class="col-md-1">
+
+                <a href="/"><img src="/images/Logo2.jpg" alt="logo" style="width: 80px;"></a>
+                </div>
+              
+                <!-- Here start the titles for the navigation bar that have the links and functions related
+                to when they are chosen and when they are not -->
+                <div style="background-color: rgb(59, 66, 99);" class="col-md-11">
+                  <ul class="nav navbar-nav">
+                    <li style="width:120px;" class="nav-item">
+                      <% if (title == "Home") { %>
+                        <a style="color:white; background-color: #B4A5E7;" class="nav-link active" href="/">
+                      <% } else { %>
+                        <a style="color:white; background-color: rgb(59, 66, 99);" class="nav-link" href="/">
+                      <% } %>
+                        <i class="fas fa-home"></i> Home </a>
+                      </a>
+                    </li>
+                    <li style="width:120px;" class="nav-item">
+                      <% if (title == "Projects") { %>
+                        <a style="color:white; background-color: #B4A5E7;" class="nav-link active" href="/projects">
+                      <% } else { %>
+                        <a style="color:white; background-color: rgb(59, 66, 99);" class="nav-link" href="/projects">
+                      <% } %>
+                        <i class="fas fa-home"></i> Projects </a>
+                      </a>
+                    </li>
+                    <li style="width:120px;" class="nav-item">
+                      <% if (title == "About") { %>
+                        <a style="color:white; background-color: #B4A5E7;" class="nav-link active" href="/about">
+                      <% } else { %>
+                        <a style="color:white; background-color: rgb(59, 66, 99);" class="nav-link" href="/about">
+                      <% } %>
+                        <i class="fas fa-home"></i> About </a>
+                      </a>
+                    </li>
+                   
+                      <li style="width:120px;" class="nav-item">
+                      <% if (title == "Contact list") { %>
+                        <a style="color:white; background-color: #B4A5E7;" class="nav-link active" href="/inventory/list">
+                      <% } else { %>
+                        <a style="color:white; background-color: rgb(59, 66, 99);" class="nav-link" href="/inventory/list">
+                      <% } %>
+                        <i class="fas fa-home"></i> Inventory </a>
+                      </a>
+                    </li>
+                    <li style="width:120px;" class="nav-item">
+                      <% if (title == "Services") { %>
+                        <a style="color:white; background-color: #B4A5E7;" class="nav-link active" href="/services">
+                      <% } else { %>
+                        <a style="color:white; background-color: rgb(59, 66, 99);" class="nav-link" href="/services">
+                      <% } %>
+                        <i class="fas fa-home"></i> Services </a>
+                      </a>
+                    </li>
+                    <li style="width:120px;" class="nav-item">
+                      <% if (title == "Contact info") { %>
+                        <a style="color:white; background-color: #B4A5E7;" class="nav-link active" href="/users/contact">
+                      <% } else { %>
+                        <a style="color:white; background-color: rgb(59, 66, 99);" class="nav-link" href="/users/contact">
+                      <% } %>
+                        <i class="fas fa-home"></i> Contact </a>
+                      </a>
+                    </li>
+                    <li style="width:120px;" class="nav-item">
+                      <% if (title == "Sign-in Form") { %>
+                        <a style="color:white; background-color: #B4A5E7;" class="nav-link active" href="/users/signin">
+                      <% } else { %>
+                        <a style="color:white; background-color: rgb(59, 66, 99);" class="nav-link" href="/users/signin">
+                      <% } %>
+                        <i class="fas fa-home"></i> Login </a>
+                      </a>
+                    </li>
+                    <li style="width:120px;" class="nav-item">
+                        <a style="color:white; background-color: #41307a;" class="nav-link active" href="/users/signout">
+                        <i class="fas fa-home"></i> Sign Out </a>
+                      </a>
+                    </li>
+                </div>
+                </nav>
+                
+        </div>
